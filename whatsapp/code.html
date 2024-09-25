@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Siti Alfiyyatuz Z.A.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Sidebar (Contacts) */
+        .sidebar {
+            width: 30%;
+            background-color: #f0f0f0;
+            border-right: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-header {
+            background-color: #075E54;
+            color: white;
+            padding: 20px;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .contact-list {
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .contact-item:hover {
+            background-color: #eaeaea;
+        }
+
+        .contact-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .contact-item .contact-name {
+            font-size: 1.1em;
+        }
+
+        /* Chat Area */
+        .chat-area {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-header {
+            background-color: #075E54;
+            color: white;
+            padding: 20px;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .chat-messages {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background-color: #e5ddd5;
+        }
+
+        .message {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 30%;
+        }
+
+        .message.sent {
+            background-color: #dcf8c6;
+            align-self: flex-end;
+        }
+
+        .message.received {
+            background-color: white;
+        }
+
+        .chat-input {
+            display: flex;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ddd;
+        }
+
+        .chat-input input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+        }
+
+        .chat-input button {
+            background-color: #075E54;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar (Contacts) -->
+    <div class="sidebar">
+        <div class="sidebar-header">Kontak</div>
+        <div class="contact-list">
+            <div class="contact-item">
+                <img src="./gambar/efgh.jpeg" alt="Contact 1">
+                <span class="contact-name">My Mom</span>
+            </div>
+            <div class="contact-item">
+                <img src="./gambar/ijkl.jpeg" alt="Contact 2">
+                <span class="contact-name">Ayah</span>
+            </div>
+            <div class="contact-item">
+                <img src="./gambar/abcd.jpeg" alt="Contact 3">
+                <span class="contact-name">Doi</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat-area">
+        <div class="chat-header">
+            <span>My Mom</span>
+            <span>Status</span>
+        </div>
+        <div class="chat-messages">
+            <div class="message received">
+                Assalamualaikum tehh alfii
+            </div>
+            <div class="message sent">
+                Wa'alaikumussalam Wr.Wb. buu
+            </div>
+            <div class="message received">
+                Jangan lupa solat dan ngaji yaa teh
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Ketik pesan">
+            <button>Kirim</button>
+        </div>
+    </div>
+
+</body>
+</html>
